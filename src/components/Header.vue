@@ -1,6 +1,5 @@
 <template>
-  <header>
-    <div class="container">
+  <header class="container">
       <img src="@/assets/img/dc-logo.png" alt="" />
       <nav>
         <ul>
@@ -16,7 +15,6 @@
           <li><a href="#">Shop</a></li>
         </ul>
       </nav>
-    </div>
   </header>
 </template>
 
@@ -31,7 +29,7 @@ header {
   padding: 15px 0;
 }
 
-header > .container {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +45,6 @@ nav {
 }
 
 ul {
-  list-style-type: none;
   display: flex;
 }
 
