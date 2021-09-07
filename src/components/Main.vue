@@ -3,24 +3,34 @@
     <div class="container">
       <ul>
         <li>
-            <a href="#"><img src="@/assets/img/buy-comics-digital-comics.png" alt="" />
-            <span>digital comics</span></a>
+          <a href="#"
+            ><img src="@/assets/img/buy-comics-digital-comics.png" alt="" />
+            <span>digital comics</span></a
+          >
         </li>
         <li>
-            <a href="#"><img src="@/assets/img/buy-comics-merchandise.png" alt="" />
-            <span>dc merchandise</span></a>
+          <a href="#"
+            ><img src="@/assets/img/buy-comics-merchandise.png" alt="" />
+            <span>dc merchandise</span></a
+          >
         </li>
         <li>
-          <a href="#"><img src="@/assets/img/buy-comics-shop-locator.png" alt="" />
-            <span>subscription</span></a>
+          <a href="#"
+            ><img src="@/assets/img/buy-comics-shop-locator.png" alt="" />
+            <span>subscription</span></a
+          >
         </li>
         <li>
-          <a href="#"><img src="@/assets/img/buy-comics-subscriptions.png" alt="" />
-            <span>comic shop locator</span></a>
+          <a href="#"
+            ><img src="@/assets/img/buy-comics-subscriptions.png" alt="" />
+            <span>comic shop locator</span></a
+          >
         </li>
         <li>
-          <a href="#"><img src="@/assets/img/buy-dc-power-visa.svg" alt="" />
-            <span>dc power visa</span></a>
+          <a href="#"
+            ><img src="@/assets/img/buy-dc-power-visa.svg" alt="" />
+            <span>dc power visa</span></a
+          >
         </li>
       </ul>
     </div>
@@ -37,6 +47,8 @@ export default {
 main {
   background: dodgerblue;
   padding: 40px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .container {
@@ -65,15 +77,15 @@ ul > li > a {
 }
 
 li img {
-    width: auto;
-    margin-right: 10px;
+  width: auto;
+  margin-right: 10px;
 }
 
 li img:not(li:nth-of-type(5) img) {
-    height: 40px;
+  height: 40px;
 }
 
-li:nth-of-type(5)  img {
-    height: 25px;
+li:nth-of-type(5) img {
+  height: 25px;
 }
 </style>
