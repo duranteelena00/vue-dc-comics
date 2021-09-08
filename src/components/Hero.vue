@@ -1,20 +1,19 @@
 <template>
-  <div class="jumbotron">--> Content goes here...</div>
+  <div class="jumbotron"></div>
 </template>
 
 <script>
 export default {
-  name: "Hero",
+  name: "Hero"
 };
 </script>
 
 <style scoped>
 div.jumbotron {
-  padding: 40px 240px;
-  min-height: 100px;
-  background: black;
-  color: white;
-  font-weight: bold;
-  
+  min-height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url("../assets/img/jumbotron.jpg")
 }
 </style>
