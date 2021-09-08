@@ -1,9 +1,14 @@
 <template>
   <header class="container">
-      <img src="@/assets/img/dc-logo.png" alt="" />
-      <nav>
-        <ul>
-          <li><a href="#">Characters</a></li>
+    <img src="@/assets/img/dc-logo.png" alt="" />
+    <nav>
+      <ul>
+        <li v-for="(link, index) in links" :key="index">
+          <a :href="link.url" :class="{ active: link.current }">{{
+            link.text
+          }}</a>
+        </li>
+        <!-- <li><a href="#">Characters</a></li>
           <li><a href="#" class="active">Comics</a></li>
           <li><a href="#">Movies</a></li>
           <li><a href="#">TV</a></li>
@@ -12,15 +17,19 @@
           <li><a href="#">Videos</a></li>
           <li><a href="#">Fans</a></li>
           <li><a href="#">News</a></li>
-          <li><a href="#">Shop</a></li>
-        </ul>
-      </nav>
+          <li><a href="#">Shop</a></li> -->
+      </ul>
+    </nav>
   </header>
 </template>
 
 <script>
 export default {
   name: "Header",
+  data() {
+    return {};
+  },
+  props: "links",
 };
 </script>
 
